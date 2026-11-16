@@ -1,0 +1,14 @@
+ruta=NULL
+V="vector conjunto nodo"
+A="matiz de costes de las aristas"
+M="matriz multiplicidades aristas" 
+while "Algún elemento de M sea distinto de 0" 
+    nodo="cualquier nodo que no sea nodo aislado al eliminar las aristas usadas en ruta" 
+    ruta1=NULL 
+    while "nodo no es un nodo aislado" 
+        "buscamos k de modo que M[nodo,k] distinto de 0" 
+        ruta1=(ruta1,k) 
+        nodo=k 
+        M[nodo,k]=M[nodo,k]-1 
+        M[k,nodo]=M[k,nodo]-1 
+    ruta="fusionamos ruta y ruta1" 
