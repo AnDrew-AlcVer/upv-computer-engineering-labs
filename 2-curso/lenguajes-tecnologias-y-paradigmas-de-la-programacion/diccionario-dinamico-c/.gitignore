@@ -1,0 +1,8 @@
+# Ignorar directorios de compilación de CMake
+build/
+CMakeCache.txt
+CMakeFiles/
+cmake-install/
+*.cmake
+Makefile
+*.o
